@@ -75,3 +75,7 @@
   padding: 32px;
 }
 
+.quizz_results p {
+  margin-top: 24px;
+  font-size: 20px;
+}
