@@ -37,7 +37,6 @@ export class QuizzComponent implements OnInit{
 
   playerChoose(value: string) {
     this.answers.push(value)
-    console.log(this.answers)
   }
 
   async nextStep() {
@@ -61,6 +60,15 @@ export class QuizzComponent implements OnInit{
       }
     })
     return result
+  }
+
+  resetQuiz() {
+    this.questionIndex = 0
+    this.finished = false
+    this.questionSelected = this.questions[this.questionIndex]
+    this.answers = []
+
+    console.log("Vamos refazer o teste")
   }
 
 }
